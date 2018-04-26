@@ -1,14 +1,14 @@
 # Hand built Makefile for use on systems without libtool, autoconf etc.
 
 # COSMOS
-FLAGS	= -O2 $(FFLAGS)
-FF = ifort
-LIBS	= -L../lib/ -lmkl_lapack -lmkl
+#FLAGS	= -O2 $(FFLAGS)
+#FF = ifort
+#LIBS	= -L../lib/ -lmkl_lapack -lmkl
 
 # Laptop
-#FLAGS	= -W -O2 $(FFLAGS)
-#FF = gfortran-4.1 -std=f2003
-#LIBS	= -L../lib/ -llapack
+FLAGS	= -W -O2 $(FFLAGS)
+FF = gfortran
+LIBS	= -L../lib/ -llapack
 
 export FF
 export FLAGS
