@@ -1,0 +1,24 @@
+# Hand built Makefile for use on systems without libtool, autoconf etc.
+
+# COSMOS
+FLAGS	= -O2 $(FFLAGS)
+FF = ifort
+LIBS	= -L../lib/ -lmkl_lapack -lmkl
+
+# Laptop
+#FLAGS	= -W -O2 $(FFLAGS)
+#FF = gfortran-4.1 -std=f2003
+#LIBS	= -L../lib/ -llapack
+
+export FF
+export FLAGS
+export LIBS
+
+all:   
+	cd lib && $(MAKE) -f Makefile.alt
+	cd src && $(MAKE) -f Makefile.alt
+
+
+clean:
+	cd lib && rm *.o libnested.a *.mod
+	cd src && rm test-sk test-sk-cl

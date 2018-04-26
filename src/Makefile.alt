@@ -1,0 +1,37 @@
+# Hand built Makefile for use on systems without libtool, autoconf etc.
+
+FLAGS += -I../lib/
+
+all: test-sk test-sk-cl test-sk-comp test-sk-3 test-sk-gen test-sk-skew
+
+test-sk: test-sk.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-sk-cl: test-sk-cl.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-mph: test-mph.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-sk-comp: test-sk-comp.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-sk-gen: test-sk-gen.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-sk-3: test-sk-3.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+test-sk-skew: test-sk-skew.F90
+	$(FF) $(FLAGS) -DPRGNAME=$@ $<  -lnested $(LIBS) -o $@
+
+
+
+debug: FLAGS += -O0 -g
+debug: all
+
+clean:
+	-rm *.o *.mod test-sk test-sk-cl test-sk-comp test-sk-gen test-sk-skew test-sk-3
+
+%.o: %.F90
+	$(FF) $(FLAGS) -c $< -o $@

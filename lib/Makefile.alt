@@ -1,0 +1,19 @@
+# Hand built Makefile for use on systems without libtool, autoconf etc.
+
+LIBOBJS = mt95.o rand.o rand_slice.o rand_nested.o treedef.o tree.o	\
+	treeutil.o twomeans.o nested.o pset.o nested_simple.o		\
+	sampling.o metropolis.o ellipsoidutil.o ellipsoid.o		\
+	nested_cluster.o distr.o
+
+libnested.a: $(LIBOBJS)
+	$(AR) rc $@ $(LIBOBJS)
+	ranlib $@
+
+debug: FLAGS += -O0 -g
+debug: all
+
+clean:
+	-rm *.o libnested.a *.mod test1d test2d vals data
+
+%.o: %.F90
+	$(FF) $(FLAGS) -c $< -o $@

@@ -1,0 +1,28 @@
+! Random pre-processor definitions.
+
+! Integer precision
+#define ik 8
+
+! Real precision
+#define rk 8
+
+#undef _DEBUG_EL
+
+#define fatal(a) \
+	PRINT *,"__FILE__:__LINE__",a; \
+	CALL exit(-1)
+
+#define nonfatal(a) \
+	PRINT *,"__FILE__:__LINE__",a;
+
+#define isnan(a) \
+	(a) /= (a)
+
+#ifdef _COSMOS_DBG
+#define COSMOS_OUT(a) \
+       PRINT *,(a)
+#else
+#define COSMOS_OUT(a)
+#endif
+  
+  

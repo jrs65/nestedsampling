@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir config
+mkdir modules
+
+aclocal
+libtoolize
+automake --add-missing --copy
+autoconf
