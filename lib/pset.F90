@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 !! A module containing the pset type and related routines. It is
 !! designed to hold the results of a sampling run.  
 !! @author Richard Shaw

@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 ! A sampler using an ellipsoid bounding method for
 ! replacements. Initial sampler is the simple initial_metropolis. For
 ! replacement, a principle ellipsoid is found from the covariance

@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 ! A simple sampler based on Metropolis-Hastings. Contains, an initial
 ! sampler (including a burn-in method, and a less useful bounded
 ! replacement sampler.

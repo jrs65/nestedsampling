@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 !! Module containing some rand number generation routines for use
 !! during nested sampling.
 MODULE rand_nested

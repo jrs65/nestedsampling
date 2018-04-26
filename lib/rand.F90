@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 !! A module wrapping around the generator provided by rand_mt. Provides
 !! functions for single, and arrays of uniform random numbers. Plus
 !! functions for generating gaussian random variables, and points

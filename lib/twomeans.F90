@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 !! Perform k-means (with k=2) to partition active points into two
 !! clusters. May modify with scheme for more general k.
 MODULE twomeans

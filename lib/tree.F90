@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 ! General tree stuff. Functions for addition, removal, deletion
 ! etc. Now updated to use a Red-Black Balanced Binary tree.  For
 ! details see, any reference on Data Structures, or

@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 ! A generalised examples file, allowing multiple Gaussians in an n-d
 ! flat-prior space. Set the separations (ensuring all within unit
 ! sphere), widths, and heights, and it will tell you the analytic

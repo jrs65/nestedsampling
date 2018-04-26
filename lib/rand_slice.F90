@@ -1,7 +1,3 @@
-! Copyright (C) 2006 Richard Shaw <jrs65 at cam.ac.uk>
-! Licensed under GNU GPL v2. See COPYING or 
-! http://www.gnu.org/copyleft/gpl.html
-
 !! A module for performing slice sampling, for drawing random numbers
 !! form an arbritrary distribution. For details, see MacKay,
 !! Information Theory, Inference and Learning Algorithms.
